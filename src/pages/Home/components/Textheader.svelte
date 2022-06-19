@@ -6,8 +6,6 @@
 </div>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-
   div {
     padding: 5rem;
   }
@@ -44,6 +42,12 @@
   @keyframes shine {
     to {
       background-position: right;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 9.5vw;
     }
   }
 </style>

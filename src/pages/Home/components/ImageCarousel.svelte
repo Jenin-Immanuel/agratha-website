@@ -61,7 +61,7 @@
 
   @media (max-width: 768px) {
     article {
-      width: 700vw;
+      width: 1200vw;
     }
   }
 </style>

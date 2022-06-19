@@ -48,7 +48,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #475569;
+    background-color: #333;
   }
 
   ul {
@@ -64,7 +64,7 @@
   a {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: #333;
   }
 
   a::hover {

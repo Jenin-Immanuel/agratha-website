@@ -1,27 +1,22 @@
 <script lang="ts">
   import Navbar from "./components/NavBar.svelte";
   import MainCover from "./components/MainCover.svelte";
+  import About from "./components/About.svelte";
+  import Covers from "./components/Covers.svelte";
+  import Contactpage from "./components/Contactpage.svelte";
+  import Followus from "./components/Followus.svelte";
+  import Copyright from "./components/Copyright.svelte";
 </script>
 
 <div>
   <Navbar />
   <MainCover />
+  <About />
+  <Covers />
+  <Contactpage />
+  <Followus />
+  <Copyright />
 </div>
 
 <style>
-  /* h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-  } */
 </style>

@@ -9,7 +9,7 @@
 </script>
 
 <div>
-  <Navbar />
+  <!-- <Navbar /> -->
   <MainCover />
   <About />
   <Covers />

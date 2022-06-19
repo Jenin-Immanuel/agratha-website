@@ -1,6 +1,6 @@
 <script lang="ts">
   import Img1 from "../../../assets/cover/1.png";
-  import Button from "../../UI-components/button.svelte";
+  import Button from "../../UIcomponents/button.svelte";
 
   const Imgs = [
     {

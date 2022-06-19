@@ -1,13 +1,16 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
+  export let home = true;
   let open = false;
 </script>
 
-<nav>
+<nav class:home>
   <ul class:open>
-    <li><a href="#0">About</a></li>
-    <li><a href="#0">Blog</a></li>
-    <li><a href="#0">Events</a></li>
-    <li><a href="#0">Contact</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/events">Events</a></li>
+    <li><a href="/contact">Contact</a></li>
   </ul>
   <div class="hamburger" class:open on:click={() => (open = !open)}>
     <span class="bar" />
@@ -29,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     padding: 1rem 1.5rem;
     background-color: rgba(255, 255, 255, 0.5);

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Button from "../../UI-components/button.svelte";
+  import Button from "../../UIcomponents/button.svelte";
 
   function submit() {
     alert(

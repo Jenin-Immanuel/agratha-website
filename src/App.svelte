@@ -1,13 +1,41 @@
 <script lang="ts">
   import Home from "./pages/Home/Home.svelte";
+  import { Route } from "tinro";
+  import NavBar from "./pages/Home/components/NavBar.svelte";
+  import Blog from "./pages/Blogs/Blog.svelte";
+  import Events from "./pages/Events/Events.svelte";
+  import Contact from "./pages/Home/components/Contactpage.svelte";
 
   window.onbeforeunload = () => {
     window.scrollTo(0, 0);
   };
+
+  // Some stupid js code
+  // let current_loc = window.location.pathname;
+  // window.onpopstate =() => {
+  //   if (window.location.pathname !== current_loc) {
+  //     current_loc = window.location.pathname;
+  //     if (current_loc !== "/") {
+  //       window.location.reload();
+  //     }
+  //   }
+  // }
 </script>
 
 <main>
-  <Home />
+  <NavBar />
+  <Route path="/">
+    <Home />
+  </Route>
+  <Route path="/blog">
+    <Blog />
+  </Route>
+  <Route path="/events">
+    <Events />
+  </Route>
+  <Route path="/contact">
+    <Contact />
+  </Route>
 </main>
 
 <style>
@@ -25,7 +53,7 @@
   }
 
   :global(body) {
-    margin: 0 auto;
+    margin: 0;
     overflow-x: hidden;
     background-color: #333;
     color: #fff;
@@ -33,6 +61,9 @@
 
   :global(p) {
     font-size: 2vw;
+  }
+
+  :global(nav) {
   }
 
   :global(h1) {

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Home from "./pages/Home/Home.svelte";
   import { Route } from "tinro";
+  import Home from "./pages/Home/Home.svelte";
   import NavBar from "./pages/Home/components/NavBar.svelte";
   import Blog from "./pages/Blogs/Blog.svelte";
   import Events from "./pages/Events/Events.svelte";
@@ -9,17 +9,6 @@
   window.onbeforeunload = () => {
     window.scrollTo(0, 0);
   };
-
-  // Some stupid js code
-  // let current_loc = window.location.pathname;
-  // window.onpopstate =() => {
-  //   if (window.location.pathname !== current_loc) {
-  //     current_loc = window.location.pathname;
-  //     if (current_loc !== "/") {
-  //       window.location.reload();
-  //     }
-  //   }
-  // }
 </script>
 
 <main>
@@ -61,9 +50,6 @@
 
   :global(p) {
     font-size: 2vw;
-  }
-
-  :global(nav) {
   }
 
   :global(h1) {

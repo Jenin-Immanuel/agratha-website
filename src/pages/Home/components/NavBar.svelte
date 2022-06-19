@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    /* position: absolute; */
+    position: absolute;
     align-items: center;
     padding: 1rem 1.5rem;
     background-color: rgba(255, 255, 255, 0.5);

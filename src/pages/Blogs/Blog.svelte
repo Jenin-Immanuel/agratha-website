@@ -4,4 +4,10 @@
   <h1>This is a blog</h1>
 </div>
 
-<style></style>
+<style>
+  div {
+    padding-inline: 15vw;
+    text-align: start;
+    padding-top: 6rem;
+  }
+</style>

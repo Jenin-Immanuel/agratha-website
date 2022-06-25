@@ -12,12 +12,24 @@
   //TODO: Add mailing facilities to this form
 </script>
 
-<div>
+<div class="outer">
   <h1>Contact US</h1>
 
   <form on:submit|preventDefault>
-    <input type="text" placeholder="Your Name" id="name" required />
-    <input type="email" placeholder="Your Email Address" id="email" required />
+    <input
+      type="text"
+      placeholder="Your Name"
+      id="name"
+      autocomplete="off"
+      required
+    />
+    <input
+      type="email"
+      placeholder="Your Email Address"
+      id="email"
+      autocomplete="off"
+      required
+    />
     <textarea
       name="Message"
       placeholder="Your Message"
@@ -26,32 +38,34 @@
       rows="20"
       required
     />
-    <Button on:click={submit} style={buttonStyle}>Submit</Button>
+    <div class="button">
+      <Button on:click={submit} style={buttonStyle}>Submit</Button>
+    </div>
   </form>
 </div>
 
 <style>
-  div {
+  .outer {
     padding-inline: 15vw;
     text-align: start;
     padding-top: 6rem;
     /* margin-bottom: clamp(5rem, 10vw, 15rem); */
   }
 
-  div form {
+  .outer form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-gap: 3em;
     margin-top: 3em;
   }
-  div form #name {
+  .outer form #name {
     grid-area: 1 / 1 / 2 / 3;
   }
-  div form #email {
+  .outer form #email {
     grid-area: 1 / 3 / 2 / 5;
   }
-  div form textarea {
+  .outer form textarea {
     grid-area: 2 / 1 / 3 / 5;
   }
 
@@ -85,7 +99,7 @@
   }
 
   @media (max-width: 768px) {
-    div {
+    .outer {
       display: none;
     }
   }

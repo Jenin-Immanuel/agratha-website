@@ -1,30 +1,17 @@
 <script lang="ts">
-  import { Route } from "tinro";
-  import Home from "./pages/Home/Home.svelte";
+  import { meta, Route, router } from "tinro";
   import NavBar from "./pages/Home/components/NavBar.svelte";
-  import Blog from "./pages/Blogs/Blog.svelte";
-  import Events from "./pages/Events/Events.svelte";
-  import Contact from "./pages/Home/components/Contactpage.svelte";
-
+  import Routing from "./Routing.svelte";
   window.onbeforeunload = () => {
     window.scrollTo(0, 0);
   };
+
+  router.mode.hash();
 </script>
 
 <main>
   <NavBar />
-  <Route path="/">
-    <Home />
-  </Route>
-  <Route path="/blog">
-    <Blog />
-  </Route>
-  <Route path="/events">
-    <Events />
-  </Route>
-  <Route path="/contact">
-    <Contact />
-  </Route>
+  <Routing />
 </main>
 
 <style>

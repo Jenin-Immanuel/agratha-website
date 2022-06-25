@@ -7,7 +7,6 @@
 <style>
   div {
     padding-inline: 15vw;
-    text-align: start;
-    padding-top: 6rem;
+    padding-top: 10rem;
   }
 </style>

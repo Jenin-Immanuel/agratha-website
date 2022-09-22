@@ -60,6 +60,32 @@
     background-position: left;
   }
 
+  :global(::-webkit-scrollbar) {
+    width: 0.85rem;
+  }
+
+  :global(::-webkit-scrollbar-thumb) {
+    background: #c2bcbc;
+    background-clip: padding-box;
+    border: 0.25rem solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    min-height: 50px;
+  }
+
+  :global(::-webkit-scrollbar-track) {
+    border: 0;
+    background-color: #333333;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #b0b0b0;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background-color: gray;
+  }
+
   @keyframes shine {
     to {
       background-position: right;

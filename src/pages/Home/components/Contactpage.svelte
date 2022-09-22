@@ -69,6 +69,12 @@
     grid-area: 2 / 1 / 3 / 5;
   }
 
+  .outer form .button {
+    grid-area: 3 / 2 / 4 / 4;
+    padding: 0.75em 4em; 
+    font-weight: bold;
+  }
+
   input,
   textarea {
     background: none;

@@ -4,7 +4,7 @@
 <div>
   <h1>About</h1>
   <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla saepe
+    Lorem, ipsum dolor sit amet consec adip elit. Ipsa nulla saepe
     maxime quibusdam. Impedit, esse, minima quibusdam ad dignissimos eos
     voluptatibus aliquam voluptates maxime ducimus repudiandae, quos qui autem
     sed eaque quia fugiat rem sit ipsum! Aperiam quas aspernatur deleniti

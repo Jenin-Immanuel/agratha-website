@@ -32,7 +32,7 @@
   <div class="container">
     {#each Imgs as Img}
       <div>
-                <img src={Img.img} alt="" />
+        <a href="http://www.google.com" target="_blank" tinro-ignore><img src={Img.img} alt="" /></a>
         <p>{Img.name}</p>
       </div>
     {/each}
@@ -85,7 +85,7 @@
     }
 
     p {
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
   }
 

@@ -1,9 +1,16 @@
 <script lang="ts">
+  import { meta } from 'tinro';
+  const route = meta();
+  let url = route.url;
+
+  console.log(url.length)
 </script>
 
 <div>
   <slot />
-  <a href="/blog" class="button"><p>Return to blog page</p></a>
+  {#if $route.url.length > 6}
+    <a href="/blog" class="button"><p>Return to blog page</p></a>
+  {/if}
 </div>
 
 <style>

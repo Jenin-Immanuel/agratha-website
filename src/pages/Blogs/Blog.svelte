@@ -81,7 +81,7 @@
   }
 
   .title {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 4;
 
     background: linear-gradient(
       90deg,
@@ -112,5 +112,41 @@
 
   .date {
     grid-area: 2 / 3 / 3 / 4;
+  }
+
+
+  @media (max-width: 768px) {
+    .outer-box {
+      padding-inline: 0;
+    }
+
+    h1 {
+      font-size: 9.5vw;
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+    }
+
+    section > a > div {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      gap: 0.5em;
+      box-shadow: none;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h6 {
+      font-size: 0.75em;
+      font-weight: normal;
+    }
+
   }
 </style>

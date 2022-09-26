@@ -1,9 +1,6 @@
 <script lang="ts">
   import { meta } from 'tinro';
   const route = meta();
-  let url = route.url;
-
-  console.log(url.length)
 </script>
 
 <div>

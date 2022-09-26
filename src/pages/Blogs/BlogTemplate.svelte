@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { meta } from 'tinro';
+  import { meta } from "tinro";
   const route = meta();
 </script>
 
-<div>
+<div class="outer-box">
   <slot />
   {#if $route.url.length > 6}
     <a href="/blog" class="button"><p>Return to blog page</p></a>
@@ -11,6 +11,11 @@
 </div>
 
 <style>
+  .outer-box {
+    padding-inline: 15vw;
+    padding-top: 7.5rem;
+    text-align: start;
+  }
   .button {
     text-decoration: none;
     color: inherit;
@@ -18,7 +23,8 @@
 
   .button > p {
     text-align: end;
-    font-size: 1.5em;
+    font-size: 0.75em;
+    color: grey;
   }
   div {
     padding-inline: 15vw;

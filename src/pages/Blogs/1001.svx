@@ -1,7 +1,12 @@
 ---
 
 ---
+<script>
+    import './defaults.css';
+</script>
 
 
 # This is another blog
+
+<style></style>
 

@@ -3,14 +3,16 @@
 
   export let home = true;
   let open = false;
+
+  const invertOpen = () => (open = !open);
 </script>
 
 <nav class:home>
   <ul class:open>
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/events">Events</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="/" on:click={invertOpen}>Home</a></li>
+    <li><a href="/blog" on:click={invertOpen}>Blog</a></li>
+    <li><a href="/events" on:click={invertOpen}>Events</a></li>
+    <li><a href="/contact" on:click={invertOpen}>Contact</a></li>
   </ul>
   <div class="hamburger" class:open on:click={() => (open = !open)}>
     <span class="bar" />
@@ -91,7 +93,7 @@
     }
 
     ul.open {
-      left: -5%;
+      left: -8%;
     }
 
     li {

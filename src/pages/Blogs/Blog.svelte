@@ -1,5 +1,18 @@
 <script lang="ts">
-  const blogs = [
+  let blogs;
+  let url = "./src/pages/Blogs/blogs.json";
+  async function getBlogs() {
+    const res = await fetch(url);
+    const data = await res.json();
+    blogs = { ...data };
+  }
+  getBlogs();
+  // fetch("./src/pages/Blogs/blogs.json")
+  //   .then((res) => res.json())
+  //   .then((json) => (blogs = json))
+  //   .catch((err) => console.error(err));
+  // console.log(blogs);
+  const oldblogs = [
     {
       id: "1000",
       title: "Music Theory in 10 min",
@@ -13,13 +26,14 @@
       date: "2022-06-25",
     },
   ];
+  console.log(oldblogs);
 </script>
 
 <div class="outer-box">
   <h1>Agratha Blogs</h1>
 
   <section>
-    {#each blogs as blog}
+    {#each oldblogs as blog}
       <a href="/blog/{blog.id}">
         <div>
           <h2 class="title">{blog.title}</h2>
@@ -114,7 +128,6 @@
     grid-area: 2 / 3 / 3 / 4;
   }
 
-
   @media (max-width: 768px) {
     .outer-box {
       padding-inline: 0;
@@ -147,6 +160,5 @@
       font-size: 0.75em;
       font-weight: normal;
     }
-
   }
 </style>

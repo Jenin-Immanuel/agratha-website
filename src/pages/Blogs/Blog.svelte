@@ -1,12 +1,12 @@
 <script lang="ts">
-  let blogs;
-  let url = "./src/pages/Blogs/blogs.json";
-  async function getBlogs() {
-    const res = await fetch(url);
-    const data = await res.json();
-    blogs = { ...data };
-  }
-  getBlogs();
+  // import { onMount } from "svelte";
+  // let blogs: any = [];
+  // let url = "./src/pages/Blogs/blogs.json";
+  // onMount(async () => {
+  //   const res = await fetch(url);
+  //   const data = await res.json();
+  //   blogs = data;
+  // });
   // fetch("./src/pages/Blogs/blogs.json")
   //   .then((res) => res.json())
   //   .then((json) => (blogs = json))
@@ -26,7 +26,7 @@
       date: "2022-06-25",
     },
   ];
-  console.log(oldblogs);
+  // console.log(oldblogs);
 </script>
 
 <div class="outer-box">

@@ -30,4 +30,10 @@
     padding-inline: 15vw;
     padding-top: 10rem;
   }
+
+  @media (max-width: 768px) {
+    .outer-box {
+      padding-inline: 0;
+    }
+  }
 </style>

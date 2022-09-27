@@ -1,14 +1,14 @@
-{
-  "1": {
+[
+  {
     "id": "1000",
     "title": "Music Theory in 10 min",
     "author": "Akash Shann",
     "date": "2022-06-25"
   },
-  "2": {
+  {
     "id": "1001",
     "title": "Another blog",
     "author": "Akash Loganathan",
     "date": "2022-06-25"
   }
-}
+]
